@@ -1,0 +1,22 @@
+
+<div class='container'>
+        <h2>Add Todo Task</h2>
+    <form>
+        <label>Description:
+            <input type="text" class="form-control" name="task" placeholder="Todo Description" [(ngModel)]="newTask" />
+        </label>
+        <br><br>
+        <select name="member" [(ngModel)]="newMember">
+            <option value="">Family Members...</option>
+            <option *ngFor="let member of memberlist" [value]="member.memberNickname">
+                {{member.memberNickname}}
+            </option>
+        </select>
+    </form>
+    <br><br>
+    <button type="submit" class='btn-btn-success' (click)="addTodoList()">Add todo</button>
+</div>
+<br><br>
+<p>
+    {{ message }}
+</p>

@@ -1,0 +1,18 @@
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Nickname</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let member of memberlist">
+        <td>{{member.memberName}}</td>
+        <td>{{member.memberNickname}}</td>
+        <td>{{member.memberDesc}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

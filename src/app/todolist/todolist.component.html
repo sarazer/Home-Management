@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Description</th>
+                <th>Date</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let task of todolist">
+                <td>{{task.taskDesc}}</td>
+                <td>{{task.taskDate | date : "dd/MMM/yyyy"}}</td>
+                <td>{{task.memberNickname}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
