@@ -1,5 +1,5 @@
 {
-  "name": "home-tasks",
+  "name": "HomeDB",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,6 +20,7 @@
     "@angular/platform-browser": "^6.0.3",
     "@angular/platform-browser-dynamic": "^6.0.3",
     "@angular/router": "^6.0.3",
+    "cookie-parser": "^1.4.3",
     "core-js": "^2.5.4",
     "express": "^4.16.3",
     "mysql": "^2.16.0",
